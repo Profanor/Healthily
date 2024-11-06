@@ -4,6 +4,7 @@ function toggleDrawer() {
   drawer.classList.toggle('show');
 }
 
+// function to toggle buttons for projects( complete/incomplete )
 function showProjects(tab) {
     const ongoingProjects = document.querySelector('.ongoing');
     const completedProjects = document.querySelector('.completed');
@@ -20,3 +21,7 @@ function showProjects(tab) {
     tabButtons.forEach(button => button.classList.remove('active'));
     document.querySelector(`.tab-button.${tab}`).classList.add('active');
 }
+
+document.querySelector('.forgot-password').addEventListener('click', function() {
+    alert('Redirecting to password reset page...');
+});
