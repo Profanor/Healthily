@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Healthily</title>
+</head>
+<body>
+        <header class="header">
+    <!-- Logo -->
+    <div class="header__logo">
+      <img src="/assets/health_logo.jpg" alt="Logo" width="50" height="50">
+    </div>
+
+    <!-- Navigation Links and Buttons for Desktop -->
+    <nav class="header__nav">
+      <ul class="nav__links">
+        <li><a href="/Home/index.html" class="nav__link">Home</a></li>
+        <li><a href="/About/aboutUs.html" class="nav__link">About Us</a></li>
+        <li><a href="/Projects/projects.html" class="nav__link">Projects</a></li>
+        <li><a href="/Dashboard/dashboard.html" class="nav__link">Dashboard</a></li>
+        <li><a href="#Pricing" class="nav__link">Pricing</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sign In and Start Button -->
+    <div class="header__actions">
+      <a href="/Login/login.html" class="header__sign-in">Sign In</a>
+      <a href="/Register/register.html"><button class="header__button">Start for Free</button></a>
+    </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <button class="header__hamburger" onclick="toggleDrawer()">
+      <span class="hamburger__icon">&#9776;</span>
+    </button>
+
+    <!-- Drawer for Mobile Menu -->
+    <div class="drawer" id="drawer">
+      <div class="drawer__content">
+        <button class="drawer__close" onclick="toggleDrawer()">&times;</button>
+        <nav class="drawer__nav">
+          <a href="/Home/index.html">Home</a>
+          <a href="/About/aboutUs.html">About Us</a>
+          <a href="/Projects/projects.html">Projects</a>
+          <a href="/Dashboard/dashboard.html">Dashboard</a>
+          <a href="#Pricing">Pricing</a>
+        </nav>
+        <div class="drawer__actions">
+          <a href="/Login/login.html" class="drawer__sign-in">Sign In</a>
+          <a href="/Register/register.html"><button class="header__button">Start for Free</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div class="dashboard-container">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#tasks">Tasks</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <h2>Project Management Dashboard</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3 class="project-name">Healthcare Facility Expansion</h3>
+                <p class="project-description">Expanding a healthcare facility...</p>
+                <div class="project-status">
+                    <label for="status">Status:</label>
+                    <select id="status" name="status">
+                        <option value="not-started">Not Started</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <h4>Best Practices for Project Management</h4>
+            <p>Learn how to manage your projects effectively using modern tools!</p>
+        </div>
+    </div>
+</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Logo and Subscription Section -->
+            <div class="footer__logo">
+                <img src="/assets/health_logo.jpg" alt="Logo" width="50" height="50">
+            </div>
+            <div class="footer__newsletter">
+                <h3 class="footer__title">Stay Updated</h3>
+                <p class="footer__description">Subscribe to our newsletter and get the latest updates directly to your inbox.</p>
+                <div class="footer__subscription">
+                    <input type="email" placeholder="Enter your email" class="footer__input">
+                    <button class="footer__subscribe-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer__links">
+            <ul class="footer__link-list">
+                <li><a href="#Home" class="footer__link">Home</a></li>
+                <li><a href="#AboutUs" class="footer__link">About Us</a></li>
+                <li><a href="#Projects" class="footer__link">Projects</a></li>
+                <li><a href="#Dashboard" class="footer__link">Dashboard</a></li>
+                <li><a href="#Pricing" class="footer__link">Pricing</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer__social">
+            <a href="https://facebook.com" class="footer__social-link">
+                <img src="/assets/icons/facebook.svg" alt="Facebook" width="24" height="24">
+            </a>
+            <a href="https://twitter.com" class="footer__social-link">
+                <img src="/assets/icons/x.svg" alt="Twitter" width="24" height="24">
+            </a>
+            <a href="https://linkedin.com" class="footer__social-link">
+                <img src="/assets/icons/linkedin.svg" alt="LinkedIn" width="24" height="24">
+            </a>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom">
+            <p class="footer__rights">© 2024 Healthily. All rights reserved.</p>
+            <p class="footer__terms">
+                <a href="#terms" class="footer__terms-link">Terms of Use</a> | 
+                <a href="#privacy" class="footer__terms-link">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
