@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Healthily</title>
+</head>
+<body>
+    <header class="header">
+    <!-- Logo -->
+    <div class="header__logo">
+      <img src="/assets/health_logo.jpg" alt="Logo" width="50" height="50">
+    </div>
+
+    <!-- Navigation Links and Buttons for Desktop -->
+    <nav class="header__nav">
+      <ul class="nav__links">
+        <li><a href="#Home" class="nav__link">Home</a></li>
+        <li><a href="#AboutUs" class="nav__link">About Us</a></li>
+        <li><a href="#Projects" class="nav__link">Projects</a></li>
+        <li><a href="#Dashboard" class="nav__link">Dashboard</a></li>
+        <li><a href="#Pricing" class="nav__link">Pricing</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sign In and Start Button -->
+    <div class="header__actions">
+      <a href="#sign-in" class="header__sign-in">Sign In</a>
+      <button class="header__button">Start for Free</button>
+    </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <button class="header__hamburger" onclick="toggleDrawer()">
+      <span class="hamburger__icon">&#9776;</span>
+    </button>
+
+    <!-- Drawer for Mobile Menu -->
+    <div class="drawer" id="drawer">
+      <div class="drawer__content">
+        <button class="drawer__close" onclick="toggleDrawer()">&times;</button>
+        <nav class="drawer__nav">
+          <a href="#Features">Features</a>
+          <a href="#Solution">Solution</a>
+          <a href="#CaseStudy">Case Study</a>
+          <a href="#Resources">Resources</a>
+          <a href="#Pricing">Pricing</a>
+        </nav>
+        <div class="drawer__actions">
+          <a href="#sign-in" class="drawer__sign-in">Sign In</a>
+          <button class="drawer__button">Start for Free</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- Main Body Section -->
+    <main class="main-content">
+      <section class="company-intro">
+        <h1>Welcome to <span class="intro">Healthily.</span></h1>
+        <p>Healthily is a leading provider of innovative project management solutions, focused on delivering complex projects across industries. With years of experience and a dedicated team, we ensure successful and timely delivery of every project.</p>
+      </section>
+
+        <!-- Image Section -->
+        <section class="image-section">
+            <img src="/assets/healthily.jpg" alt="Project Management" class="full-width-image">
+        </section>
+
+        <section class="project-management">
+            <h2>Project Management</h2>
+            <p>Our team’s experience in healthcare project management is unsurpassed. We have managed more than 78 million square feet of complex new, expansion, renovation, replacement, ambulatory care, and acute care projects with a value of more than $25 billion for hospitals and health systems nationwide.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Logo and Subscription Section -->
+            <div class="footer__logo">
+                <img src="/assets/health_logo.jpg" alt="Logo" width="50" height="50">
+            </div>
+            <div class="footer__newsletter">
+                <h3 class="footer__title">Stay Updated</h3>
+                <p class="footer__description">Subscribe to our newsletter and get the latest updates directly to your inbox.</p>
+                <div class="footer__subscription">
+                    <input type="email" placeholder="Enter your email" class="footer__input">
+                    <button class="footer__subscribe-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer__links">
+            <ul class="footer__link-list">
+                <li><a href="#Home" class="footer__link">Home</a></li>
+                <li><a href="#AboutUs" class="footer__link">About Us</a></li>
+                <li><a href="#Projects" class="footer__link">Projects</a></li>
+                <li><a href="#Dashboard" class="footer__link">Dashboard</a></li>
+                <li><a href="#Pricing" class="footer__link">Pricing</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer__social">
+            <a href="https://facebook.com" class="footer__social-link">
+                <img src="/assets/icons/facebook.svg" alt="Facebook" width="24" height="24">
+            </a>
+            <a href="https://twitter.com" class="footer__social-link">
+                <img src="/assets/icons/x.svg" alt="Twitter" width="24" height="24">
+            </a>
+            <a href="https://linkedin.com" class="footer__social-link">
+                <img src="/assets/icons/linkedin.svg" alt="LinkedIn" width="24" height="24">
+            </a>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom">
+            <p class="footer__rights">© 2024 Healthily. All rights reserved.</p>
+            <p class="footer__terms">
+                <a href="#terms" class="footer__terms-link">Terms of Use</a> | 
+                <a href="#privacy" class="footer__terms-link">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+    <script src = "../index.js"></script>
+</body>
+</html>

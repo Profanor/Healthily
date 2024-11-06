@@ -1,0 +1,25 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore build or compiled files (if using a build system)
+dist/
+build/
+
+# Ignore node modules (if using npm packages for tooling)
+node_modules/
+
+# Ignore package-lock.json or yarn.lock (optional)
+package-lock.json
+yarn.lock
+
+# Ignore cache or temporary files
+.cache/
+*.log
+*.tmp
