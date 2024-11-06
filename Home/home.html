@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Healthily</title>
+</head>
+<body>
+    <header class="header">
+    <!-- Logo -->
+    <div class="header__logo">
+      <img src="/assets/health_logo.jpg" alt="Logo" width="50" height="50">
+    </div>
+
+    <!-- Navigation Links and Buttons for Desktop -->
+    <nav class="header__nav">
+      <ul class="nav__links">
+        <li><a href="#Home" class="nav__link">Home</a></li>
+        <li><a href="#AboutUs" class="nav__link">About Us</a></li>
+        <li><a href="#Projects" class="nav__link">Projects</a></li>
+        <li><a href="#Dashboard" class="nav__link">Dashboard</a></li>
+        <li><a href="#Pricing" class="nav__link">Pricing</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sign In and Start Button -->
+    <div class="header__actions">
+      <a href="#sign-in" class="header__sign-in">Sign In</a>
+      <button class="header__button">Start for Free</button>
+    </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <button class="header__hamburger" onclick="toggleDrawer()">
+      <span class="hamburger__icon">&#9776;</span>
+    </button>
+
+    <!-- Drawer for Mobile Menu -->
+    <div class="drawer" id="drawer">
+      <div class="drawer__content">
+        <button class="drawer__close" onclick="toggleDrawer()">&times;</button>
+        <nav class="drawer__nav">
+          <a href="#Features">Features</a>
+          <a href="#Solution">Solution</a>
+          <a href="#CaseStudy">Case Study</a>
+          <a href="#Resources">Resources</a>
+          <a href="#Pricing">Pricing</a>
+        </nav>
+        <div class="drawer__actions">
+          <a href="#sign-in" class="drawer__sign-in">Sign In</a>
+          <button class="drawer__button">Start for Free</button>
+        </div>
+      </div>
+    </div>
+  </header>
+    <script src = "../index.js"></script>
+</body>
+</html>
